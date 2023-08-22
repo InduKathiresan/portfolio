@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block projectsactive %}active{% endblock projectsactive %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block body %}
+
+      <div class="container my-5">
+        <h2 class="text-center my-3 py-3">My Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/beecart.jpg' %}" class="card-img-top" alt="...">
+            <div style="background-color: #0C343D; color: aliceblue; line-height: 1.6;" class="card-body">
+              <h5 class="card-title">BeeCart</h5>
+              <p align="justify" class="card-text">An E-Commerce website where the <strong>logged in users and guest users</strong> can buy products from the store and the users can pay through <strong>Paypal.</strong></p>
+              <p align="justify" class="card-text"><strong>Tech Stack:</strong>&nbsp; Python, Django, HTML 5, CSS, Bootstrap, SQLite3 and JavaScript.</p>
+              <a href="https://drive.google.com/file/d/1ieYeZetPZc0qDc4LM8DJYYE-dagMB6BP/view" class="btn btn-light"><strong>Demo</strong></a>
+              <a href="https://github.com/InduKathiresan/ecommerce" class="btn btn-light"><strong>Source Code</strong></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/todo.jpg' %}" class="card-img-top" alt="...">
+              <div style="background-color: #0C343D; color: aliceblue; line-height: 1.6;" class="card-body">
+                <h5 class="card-title">To-Do List</h5>
+                <p align="justify" class="card-text">This allows the user to <strong>add tasks</strong> with description. They can <strong>update</strong> and <strong>delete</strong> the tasks.
+                  The <strong>number of incomplete tasks</strong> will be displayed.</p>
+                <p align="justify" class="card-text"><strong>Tech Stack:</strong>&nbsp; Python, Django, HTML 5, CSS, Bootstrap, and SQLite3.</p>
+                
+                <a href="https://drive.google.com/file/d/13o6KIzgS5dFITMYsvXMHDHHzoo7Wzgan/view" class="btn btn-light"><strong>Demo</strong></a>
+                <a href="https://github.com/InduKathiresan/todo_list" class="btn btn-light"><strong>Source Code</strong></a>
+               
+                
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/quiz.jpg' %}" class="card-img-top" alt="...">
+                <div style="background-color: #0C343D; color: aliceblue; line-height: 1.6;" class="card-body">
+                  <h5 class="card-title">Crackiz</h5>
+                  <p align="justify" class="card-text">The user can <strong>try a quiz</strong> that is displayed in homepage. After completing the quiz, the <strong>results</strong> will be <strong>displayed with correct answers</strong>.</p>
+                  <p align="justify" class="card-text"><strong>Tech Stack:</strong>&nbsp; Python, Django, HTML 5, CSS, Bootstrap, and SQLite3.</p>
+                  <a href="https://drive.google.com/file/d/1veuJaH7BeGHPI3sX2lAHfmjiaV5AiV5f/view" class="btn btn-light"><strong>Demo</strong></a>
+                  <a href="https://github.com/InduKathiresan/quizproject" class="btn btn-light"><strong>Source Code</strong></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+{% endblock body %}

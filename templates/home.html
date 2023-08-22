@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block homeactive %}active{% endblock homeactive %}
+
+{% block title %}Home {% endblock title %}
+
+{% block body %}
+
+
+      <div class="container my-5">
+        
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-center my-3 py-3">About me</h2>
+            <br>
+            <p style="line-height: 1.6;" align="justify">Hello, I am a Web developer from Coimbatore. I am capable of making visually aesthetic, responsive and accessible websites. I have a hands on experience in creating a E-Commerce website, To-Do List and Quiz website with the tech stack Python, Django, HTML 5, CSS, Bootstrap, SQLite3, Postgresql and JavaScript. I strive to create high quality websites with my knowledge and I would like to enhance my skills and experience in the field of web development.</p>
+            <br>
+            <a class="btn btn-dark" href="https://drive.google.com/file/d/1yGjKW07Ak5pJLFhIyerpZ5HQAylGdkas/view"><strong>Download Resume &nbsp &#x21E9;</strong></a>
+          </div>
+          <div style="text-align:left;" class="col-md-6 px-3">
+          <div class="card mt-3 float-right" style="width: 18rem; height: 28rem;">
+            <img src="{% static 'images/deve.jpg' %}" class="card-img-top" style="width: 18rem; height: 15rem;" alt="...">
+            <div style="background-color: rgb(80, 79, 79); color: aliceblue; line-height: 1.6;" class="card-body">
+              <h5 class="card-title">Developer</h5>
+              <p align="justify" class="card-text">Here are some of the projects I have made using Django framework.</p>
+              <a href="/projects" class="btn btn-light"><strong>My Projects</strong></a>
+            </div>
+          </div>
+          </div>
+        <!--<div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/3.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/5.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>-->
+         
+
+        </div>
+      </div>
+
+      <div class="containerfluid mt-0 px-0"> <!--corousal with indicator-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'images/ecom.jpg' %}" height="500" width="1900" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/todolist.jpg' %}" height="500" width="1900" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/quizes.jpg' %}" height="500" width="1900" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+{% endblock body %}
